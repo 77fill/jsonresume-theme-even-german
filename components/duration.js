@@ -8,5 +8,5 @@ import DateTime from './date-time.js'
  */
 export default function Duration(startDate, endDate) {
   if (endDate === startDate) return DateTime(endDate)
-  return html`<time-duration>${DateTime(startDate)} – ${endDate ? DateTime(endDate) : 'Present'}</time-duration>`
+  return html`<time-duration>${DateTime(startDate)} – ${endDate ? DateTime(endDate) : 'Jetzt'}</time-duration>`
 }

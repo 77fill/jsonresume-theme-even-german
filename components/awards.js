@@ -11,7 +11,7 @@ export default function Awards(awards = []) {
     awards.length > 0 &&
     html`
       <section id="awards">
-        <h3>Awards</h3>
+        <h3>Auszeichnungen</h3>
         <div class="stack">
           ${awards.map(
             ({ awarder, date, summary, title }) => html`
@@ -19,7 +19,7 @@ export default function Awards(awards = []) {
                 <header>
                   <h4>${title}</h4>
                   <div class="meta">
-                    ${awarder && html`<div>Awarded by <strong>${awarder}</strong></div>`} ${date && DateTime(date)}
+                    ${awarder && html`<div>Verliehen von <strong>${awarder}</strong></div>`} ${date && DateTime(date)}
                   </div>
                 </header>
                 ${summary && markdown(summary)}

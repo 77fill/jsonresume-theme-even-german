@@ -12,7 +12,7 @@ export default function Publications(publications = []) {
     publications.length > 0 &&
     html`
       <section id="publications">
-        <h3>Publications</h3>
+        <h3>Publikationen</h3>
         <div class="stack">
           ${publications.map(
             ({ name, publisher, releaseDate, summary, url }) => html`
@@ -20,7 +20,7 @@ export default function Publications(publications = []) {
                 <header>
                   <h4>${Link(url, name)}</h4>
                   <div class="meta">
-                    ${publisher && html`<div>Published by <strong>${publisher}</strong></div>`}
+                    ${publisher && html`<div>Veröffentlicht von <strong>${publisher}</strong></div>`}
                     ${releaseDate && DateTime(releaseDate)}
                   </div>
                 </header>

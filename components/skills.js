@@ -9,7 +9,7 @@ export default function Skills(skills = []) {
     skills.length > 0 &&
     html`
       <section id="skills">
-        <h3>Skills</h3>
+        <h3>Fähigkeiten</h3>
         <div class="grid-list">
           ${skills.map(
             ({ keywords = [], name }) => html`

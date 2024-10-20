@@ -23,7 +23,7 @@ import Work from './work.js'
  */
 export default function Resume(resume, { css, js } = {}) {
   return html`<!doctype html>
-    <html lang="en" style="${colors(resume.meta)}">
+    <html lang="de" style="${colors(resume.meta)}">
       <head>
         <meta charset="utf-8" />
         ${Meta(resume.basics)}

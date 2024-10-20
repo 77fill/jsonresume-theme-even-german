@@ -18,7 +18,7 @@ export default function Projects(projects = []) {
     projects.length > 0 &&
     html`
       <section id="projects">
-        <h3>Projects</h3>
+        <h3>Projekte</h3>
         <div class="stack">
           ${projects.map(
             ({
@@ -39,7 +39,7 @@ export default function Projects(projects = []) {
                   <div class="meta">
                     <div>
                       ${roles.length > 0 && html`<strong>${formatRoles(roles)}</strong>`}
-                      ${entity && html`at <strong>${entity}</strong>`}
+                      ${entity && html`bei <strong>${entity}</strong>`}
                     </div>
                     ${startDate && html`<div>${Duration(startDate, endDate)}</div>`} ${type && html`<div>${type}</div>`}
                   </div>
